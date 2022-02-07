@@ -4,22 +4,6 @@
 #include <iostream>
 #include "TextScreen.h"
 
-class Player
-{
-private:
-    int Hp;
-    int Att;
-
-public:
-    // 이게 좋아보이느냐?
-    void Damage(int _DamageValue);
-
-    //{
-    //    Hp -= _DamageValue;
-    //}
-
-};
-
 int main()
 {
     // 스택에 n바이트가 할당되었을것이다

@@ -140,14 +140,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\0207_ConsoleScreen\ConsoleScreen.cpp" />
-    <ClCompile Include="..\0207_ConsoleScreen\TextScreen.cpp" />
+    <ClCompile Include="ConsoleScreen.cpp" />
+    <ClCompile Include="TextScreen.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="0207_kimwoojeong.PNG" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\0207_ConsoleScreen\TextScreen.h" />
+    <ClInclude Include="TextScreen.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
