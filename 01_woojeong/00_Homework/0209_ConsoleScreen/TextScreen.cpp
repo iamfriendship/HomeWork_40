@@ -1,6 +1,6 @@
 #include "TextScreen.h"
 #include <iostream>
-
+#include <conio.h>
 
 TextScreen::TextScreen(int _Width, int _Height, const char* _DefaultValue)
 	: PixelData_(nullptr)
@@ -81,7 +81,7 @@ void TextScreen::PrintScreen()
 }
 
 
-void TextScreen::SetPixel(ConsoleVector _Pos, const char* _DefaultValue)
+void TextScreen::SetPixel(ConsoleVector _Pos, const char* _DefaultValue) 
 {
 	SetPixel(_Pos.x_, _Pos.y_, _DefaultValue);
 }
