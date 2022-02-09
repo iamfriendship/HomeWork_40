@@ -54,7 +54,7 @@ public:
 		Result.y_ = y_ + _Other.y_;
 		return Result;
 	}
-
+	
 	ConsoleVector& operator+=(const ConsoleVector& _Other)
 	{
 		x_ += _Other.x_;

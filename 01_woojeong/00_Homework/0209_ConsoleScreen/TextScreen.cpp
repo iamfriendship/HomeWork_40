@@ -1,5 +1,6 @@
 #include "TextScreen.h"
 #include <iostream>
+#include <conio.h>
 
 TextScreen::TextScreen(int _Width, int _Height, const char* _DefaultValue)
 	: PixelData_(nullptr)
@@ -53,26 +54,26 @@ void TextScreen::SettingScreen()
 	int RealWidth = Size_.x_ * 2;
 	RealWidth += 1;
 
-	for (int y = 0; y < Size_.y_; y++)
+	for (int y = 0; y < Size_.y_; y++) // 한줄씩그리기 반복
 	{
-		for (int x = 0; x < Size_.x_; x++)
+		for (int x = 0; x < Size_.x_; x++) // 너비 만큼 반복
 		{
-			for (int i = 0; i < 2; i++)
+			for (int i = 0; i < 2; i++) // ㅁ넣기
 			{
 				PixelData_[y][(x * 2) + i] = DefaultPixel_[i];
 			}
 		}
 		PixelData_[y][(Size_.x_ * 2)] = '\n';
-		PixelData_[y][(Size_.x_ * 2) + 1] = 0;
+		PixelData_[y][RealWidth] = 0;
 	}
 
 }
 
 void TextScreen::PrintScreen() 
 {
-	system("cls");
+	system("cls"); //화면지우기
 
-	for (int y = 0; y < Size_.y_; y++)
+	for (int y = 0; y < Size_.y_; y++) // 한줄씩 출력
 	{
 		// char*
 		printf_s(PixelData_[y]);

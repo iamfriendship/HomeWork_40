@@ -15,13 +15,13 @@ int main()
 
     Player NewPlayer(&NewScreen, "★");
 
-    NewScreen.SettingScreen();
+    NewScreen.SettingScreen(); 
 
     // ㅁㅁㅁ
     // ㅁ★ㅁ
     // ㅁㅁㅁ
 
-    while (true)
+    while (true) //계속반복
     {
         NewScreen.SettingScreen();
         NewPlayer.Render();
