@@ -83,14 +83,6 @@ void TextScreen::PrintScreen()
 
 void TextScreen::SetPixel(ConsoleVector _Pos, const char* _DefaultValue)
 {
-	if (_Pos.x_ > Size_.x_-1 || _Pos.y_ > Size_.y_-1)
-	{
-		assert(false);
-	}
-	if (_Pos.x_ < 0 || _Pos.y_ < 0 )
-	{
-		assert(false);
-	}
 	SetPixel(_Pos.x_, _Pos.y_, _DefaultValue);
 }
 
