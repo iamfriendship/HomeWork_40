@@ -33,6 +33,7 @@ public:
 protected:
 
 private:
+	bool QuitGame();
 	// Has a 개념이라고 합니다.
 	// 플레이어는 어차피 너무나도 많이 
 	// 만약 이 개념이 각자의 것을 가져야 한다면
