@@ -28,4 +28,5 @@ int main()
         NewScreen.PrintScreen();
         NewPlayer.Update();
     }
+    return 0;
 }

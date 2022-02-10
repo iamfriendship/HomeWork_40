@@ -48,11 +48,20 @@ void Player::Update()
 	case 'S':
 		Pos_.y_ += 1;
 		break;
+	case 'q':
+	case 'Q':
+		QuitGame();
+		break;
 	default:
 		break;
 	}
 	
 
+}
+
+bool Player::QuitGame()
+{
+	return false;
 }
 
 void Player::Render() 
