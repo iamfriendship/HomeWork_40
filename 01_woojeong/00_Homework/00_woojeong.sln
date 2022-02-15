@@ -5,6 +5,12 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleScreen", "0214_ConsoleScreen\ConsoleScreen.vcxproj", "{958B682C-8D66-4E32-903C-B9F8A3014EFB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConsoleGame", "ConsoleGame", "{E3B95403-6F70-42B8-871D-B420EF82F6EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0215_homework", "0215_homework", "{141195D1-31D3-483E-8E77-293C89004806}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameArray", "GameArray\GameArray.vcxproj", "{4310484F-8065-4061-9D3E-497024F6A7A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,9 +27,21 @@ Global
 		{958B682C-8D66-4E32-903C-B9F8A3014EFB}.Release|x64.Build.0 = Release|x64
 		{958B682C-8D66-4E32-903C-B9F8A3014EFB}.Release|x86.ActiveCfg = Release|Win32
 		{958B682C-8D66-4E32-903C-B9F8A3014EFB}.Release|x86.Build.0 = Release|Win32
+		{4310484F-8065-4061-9D3E-497024F6A7A4}.Debug|x64.ActiveCfg = Debug|x64
+		{4310484F-8065-4061-9D3E-497024F6A7A4}.Debug|x64.Build.0 = Debug|x64
+		{4310484F-8065-4061-9D3E-497024F6A7A4}.Debug|x86.ActiveCfg = Debug|Win32
+		{4310484F-8065-4061-9D3E-497024F6A7A4}.Debug|x86.Build.0 = Debug|Win32
+		{4310484F-8065-4061-9D3E-497024F6A7A4}.Release|x64.ActiveCfg = Release|x64
+		{4310484F-8065-4061-9D3E-497024F6A7A4}.Release|x64.Build.0 = Release|x64
+		{4310484F-8065-4061-9D3E-497024F6A7A4}.Release|x86.ActiveCfg = Release|Win32
+		{4310484F-8065-4061-9D3E-497024F6A7A4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{958B682C-8D66-4E32-903C-B9F8A3014EFB} = {E3B95403-6F70-42B8-871D-B420EF82F6EC}
+		{4310484F-8065-4061-9D3E-497024F6A7A4} = {141195D1-31D3-483E-8E77-293C89004806}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E1D26C34-14C3-4F23-8006-C06D1628EA19}
