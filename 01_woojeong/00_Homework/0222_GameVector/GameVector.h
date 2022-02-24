@@ -226,7 +226,7 @@ public:
         
 
         // Push_back이 되었다면
-
+        
         ArrData_[Size_] = _Data;
         ++Size_;
         //정렬
